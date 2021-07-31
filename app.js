@@ -5,7 +5,7 @@ require("dotenv").config();
 
 app.use(express.json());
 
-const watsonRoutes = require("./routes/api/watson");
+const watsonRoutes = require("./watson");
 
 app.use("/api/watson", watsonRoutes);
 
