@@ -9,7 +9,8 @@ const authenticator = new IamAuthenticator({
 });
 
 const assistant = new AssistantV2({
-  version: "2019-02-08",
+  version: "2020-04-01",
+  serviceName: "assistant",
   authenticator: authenticator,
   url: process.env.WATSON_ASSISTANT_URL,
 });
@@ -38,7 +39,7 @@ router.post("/message", async (req, res) => {
   try {
     const message = await assistant.message(payload);
     res.json(message["result"]);
-  } catch {
+  } catch (err) {
     res.send("There was an error processing your request");
     console.log(err);
   }

@@ -7,7 +7,7 @@ app.use(express.json());
 
 const watsonRoutes = require("./watson");
 
-app.use("/api/watson", watsonRoutes);
+app.use("/", watsonRoutes);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
