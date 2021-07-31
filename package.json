@@ -64,6 +64,7 @@
     "has-yarn": "^2.1.0",
     "http-cache-semantics": "^4.1.0",
     "http-errors": "^1.7.2",
+    "ibm-watson": "^6.1.1",
     "iconv-lite": "^0.4.24",
     "ignore-by-default": "^1.0.1",
     "import-lazy": "^2.1.0",
@@ -150,7 +151,6 @@
     "url-parse-lax": "^3.0.0",
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2",
-    "watson-developer-cloud": "^4.0.1",
     "widest-line": "^3.1.0",
     "wrappy": "^1.0.2",
     "write-file-atomic": "^3.0.3",
@@ -161,7 +161,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app",
+    "app": "nodemon app"
   },
   "repository": {
     "type": "git",

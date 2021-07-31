@@ -1,25 +1,11 @@
-require("dotenv").config();
-
 const express = require("express");
 const app = express();
-const port = 3000;
 
-const bodyParser = require("body-parser"),
-  DEFAULT_BODY_SIZE_LIMIT = 1024 * 1024 * 10,
-  DEFAULT_PARAMETER_LIMIT = 10000;
+require("dotenv").config();
 
-const bodyParserJsonConfig = () => ({
-  parameterLimit: DEFAULT_PARAMETER_LIMIT,
-  limit: DEFAULT_BODY_SIZE_LIMIT,
-});
+app.use(express.json());
 
-const ask = require("./controller").ask;
-
-app.use(bodyParser.json(bodyParserJsonConfig()));
-
-app.get("/", (req, res) => res.send("<h1>Hello from Watson!</h1>"));
-app.post("/ask", ask);
-
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log("Server listening on port", port);
 });
