@@ -1,8 +1,11 @@
-const http = require("http");
+const express = require("express");
+const app = express();
+const port = 3000;
 
-const server = http.createServer((req, res, next) => {
-  console.log(req);
-  console.log("Listening on port 3000");
+app.get("/", (req, res) => {
+  res.send("<h1>Hello from Express!</h1>");
 });
 
-server.listen(3000);
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
