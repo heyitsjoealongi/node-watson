@@ -1,3 +1,5 @@
 import { combineReducers } from "redux";
 
-export default combineReducers({});
+import queue from "./queue";
+
+export default combineReducers({ queue });
