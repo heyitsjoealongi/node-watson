@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 
-import { userMessage } from "../actions/queue";
+import { userMessage, sendMessage } from "../actions/queue";
 
-const Chat = ({ chat, userMessage }) => {
+const Chat = ({ chat, userMessage, sendMessage }) => {
   const [message, setMessage] = useState("");
 
   const handleClick = async (event) => {
@@ -12,6 +12,7 @@ const Chat = ({ chat, userMessage }) => {
     if (code === 13) {
       console.log(message);
       userMessage(message);
+      sendMessage(message);
       setMessage("");
     }
   };
@@ -39,4 +40,4 @@ const mapStateToProps = (state) => ({
   chat: state.queue.messages,
 });
 
-export default connect(mapStateToProps, { userMessage })(Chat);
+export default connect(mapStateToProps, { userMessage, sendMessage })(Chat);

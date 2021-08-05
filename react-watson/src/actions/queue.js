@@ -3,6 +3,8 @@ import {
   INPUT_FAIL,
   SESSION_SUCCESS,
   SESSION_FAIL,
+  MESSAGE_SUCCESS,
+  MESSAGE_FAIL,
 } from "./types";
 
 import axios from "axios";
@@ -21,5 +23,18 @@ export const createSession = () => async (dispatch) => {
     dispatch({ type: SESSION_SUCCESS, payload: response.data });
   } catch (error) {
     dispatch({ type: SESSION_FAIL });
+  }
+};
+
+export const sendMessage = (message) => async (dispatch) => {
+  try {
+    const body = { input: message };
+    const response = await axios.post("/message", body);
+    dispatch({
+      type: MESSAGE_SUCCESS,
+      payload: response.data.output.generic[0].text,
+    });
+  } catch {
+    dispatch({ type: MESSAGE_FAIL });
   }
 };

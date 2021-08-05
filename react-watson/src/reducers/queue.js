@@ -3,6 +3,8 @@ import {
   INPUT_FAIL,
   SESSION_SUCCESS,
   SESSION_FAIL,
+  MESSAGE_SUCCESS,
+  MESSAGE_FAIL,
 } from "../actions/types";
 
 const initialState = {
@@ -30,6 +32,16 @@ export default (state = initialState, action) => {
         ...state,
       };
     case SESSION_FAIL:
+      return {
+        ...state,
+      };
+    case MESSAGE_SUCCESS:
+      messages = [...messages, { message: payload, type: "bot" }];
+      return {
+        ...state,
+        messages,
+      };
+    case MESSAGE_FAIL:
       return {
         ...state,
       };
