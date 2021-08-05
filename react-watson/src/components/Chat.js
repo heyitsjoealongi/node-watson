@@ -19,7 +19,11 @@ const Chat = ({ chat, userMessage }) => {
     <>
       <section className="chat">
         <h1>Watson Chatbot</h1>
-        <article>Chat Goes Here</article>
+        {chat.length === 0
+          ? ""
+          : chat.map((message) => (
+              <article className="{msg.type}">{message.message}</article>
+            ))}
         <input
           id="chatBox"
           onChange={(event) => setMessage(event.target.value)}
