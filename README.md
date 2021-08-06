@@ -23,4 +23,4 @@ Having an issue with the repository? Report bugs & issues with node-watson on Gi
 
 ##### License
 
-© 2021 React Ventures released via [MIT](https://opensource.org/licenses/MIT) license. Information on this license can be viewed as it applies to this repository on GitHub at [React Ventures License](https://github.com/collectedview/node-watson/blob/master/LICENSE).
+© 2021 React Ventures released via [MIT](https://opensource.org/licenses/MIT) license. Information on this license can be viewed as it applies to this repository on GitHub at [node-watson License](https://github.com/collectedview/node-watson/blob/master/LICENSE).
