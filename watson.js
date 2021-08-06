@@ -15,33 +15,33 @@ const assistant = new AssistantV2({
   url: process.env.WATSON_ASSISTANT_URL,
 });
 
-router.get("/session", async (req, res) => {
+router.get("/session", async (request, response) => {
   try {
     const session = await assistant.createSession({
       assistantId: process.env.WATSON_ASSISTANT_ID,
     });
-    res.json(session["result"]);
-  } catch (err) {
-    res.send("There was an error processing your request");
-    console.log(err);
+    response.json(session["result"]);
+  } catch (error) {
+    response.send("There was an error processing your request");
+    console.log(error);
   }
 });
 
-router.post("/message", async (req, res) => {
+router.post("/message", async (request, response) => {
   payload = {
     assistantId: process.env.WATSON_ASSISTANT_ID,
-    sessionId: req.headers.session_id,
+    sessionId: request.headers.session_id,
     input: {
       message_type: "text",
-      text: req.body.input,
+      text: request.body.input,
     },
   };
   try {
     const message = await assistant.message(payload);
-    res.json(message["result"]);
-  } catch (err) {
-    res.send("There was an error processing your request");
-    console.log(err);
+    response.json(message["result"]);
+  } catch (error) {
+    response.send("There was an error processing your request");
+    console.log(error);
   }
 });
 
