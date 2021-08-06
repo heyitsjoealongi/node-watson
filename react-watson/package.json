@@ -1,6 +1,7 @@
 {
   "name": "react-watson",
   "version": "1.0.0",
+  "description": "Chatbot React Application — React, Redux, Axios, Node & Express Powered by IBM Watson | Develop virtual assistant features through JavaScript REST APIs. ",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

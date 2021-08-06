@@ -1,7 +1,27 @@
 {
   "name": "node-watson",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chatbot Node Application — React, Redux, Axios, Node & Express Powered by IBM Watson | Develop virtual assistant features through JavaScript REST APIs. ",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/collectedview/node-watson.git"
+  },
+  "author": "Joe Alongi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/collectedview/node-watson/issues"
+  },
+  "homepage": "https://github.com/collectedview/node-watson#readme",
+  "keywords": [
+    "react",
+    "redux",
+    "nodejs",
+    "express",
+    "watson",
+    "axios",
+    "virtual-assistant"
+  ],
   "main": "app.js",
   "dependencies": {
     "axios": "^0.21.1",
@@ -19,15 +39,5 @@
     "app": "nodemon app",
     "react-watson": "npm start --prefix react-watson",
     "dev": "concurrently \"npm run app\" \"npm run react-watson\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/collectedview/node-watson.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/collectedview/node-watson/issues"
-  },
-  "homepage": "https://github.com/collectedview/node-watson#readme"
+  }
 }
