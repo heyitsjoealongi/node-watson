@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) [![License: MIT ](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collectedview/node-watson/blob/master/LICENSE) ![GitHub stars](https://img.shields.io/github/stars/collectedview/node-watson?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/collectedview?label=Follow&style=social)
 
-Chatbot Full Stack Application — [React](https://reactjs.org/), [Redux](https://redux.js.org/), [Axios](https://axios-http.com/), [Node](https://nodejs.org/en/) & [Express](http://expressjs.com/) Powered by IBM Watson | Develop virtual assistant features through JavaScript REST APIs.
+Chatbot Full Stack Application — [React](https://reactjs.org/), [Redux](https://redux.js.org/), [Axios](https://axios-http.com/), [Node](https://nodejs.org/en/) & [Express](http://expressjs.com/) Powered by [IBM Watson](https://www.ibm.com/watson) | Develop virtual assistant features through JavaScript REST APIs.
 
 ## Additional
 
@@ -14,6 +14,7 @@ Having an issue with the repository? Report bugs & issues with node-watson on Gi
 
 - [Watson Node SDK](https://github.com/watson-developer-cloud/node-sdk)
 - [Create React App](https://create-react-app.dev/)
+- [YouTube](https://www.youtube.com/watch?v=D_doogJln14)
 - [YouTube](https://www.youtube.com/watch?v=-rejmmjSnHM)
 
 ##### Additional Acknowledgments
