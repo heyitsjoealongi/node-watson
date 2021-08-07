@@ -1,18 +1,27 @@
 {
   "name": "node-watson",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "dotenv": "^6.2.0",
-    "express": "^4.17.1",
-    "ibm-watson": "^6.1.1"
+  "description": "Chatbot Node Application — React, Redux, Axios, Node & Express Powered by IBM Watson | Develop virtual assistant features through JavaScript REST APIs. ",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/collectedview/node-watson.git"
   },
-  "devDependencies": {
-    "concurrently": "^6.2.0",
-    "nodemon": "^2.0.12"
+  "author": "Joe Alongi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/collectedview/node-watson/issues"
   },
+  "homepage": "https://github.com/collectedview/node-watson#readme",
+  "keywords": [
+    "react",
+    "redux",
+    "nodejs",
+    "express",
+    "watson",
+    "axios",
+    "virtual-assistant"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
@@ -20,14 +29,14 @@
     "react-watson": "npm start --prefix react-watson",
     "dev": "concurrently \"npm run app\" \"npm run react-watson\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/collectedview/node-watson.git"
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "ibm-watson": "^6.1.1"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/collectedview/node-watson/issues"
-  },
-  "homepage": "https://github.com/collectedview/node-watson#readme"
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
 }
