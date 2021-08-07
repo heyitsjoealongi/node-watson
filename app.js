@@ -19,5 +19,5 @@ app.get("/*", (req, res) => {
 
 const port = process.env.PORT || 3030;
 app.listen(port, () => {
-  console.log("Server listening on port", port);
+  console.log(`Node Watson now running at http://localhost:${port}`);
 });
