@@ -9,13 +9,13 @@ app.use(express.json());
 
 const watsonRoutes = require("./watson");
 
-app.use("/", watsonRoutes);
-
 app.use(express.static(path.join(__dirname, "build")));
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "react-watson", "build", "index.html"));
 });
+
+app.use("/", watsonRoutes);
 
 const port = process.env.PORT || 3030;
 app.listen(port, () => {

@@ -1,5 +1,6 @@
 {
   "env": {
+    "PORT": "",
     "WATSON_ASSISTANT_APIKEY": "",
     "WATSON_ASSISTANT_URL": "",
     "WATSON_ASSISTANT_ID": ""

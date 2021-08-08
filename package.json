@@ -22,6 +22,10 @@
     "axios",
     "virtual-assistant"
   ],
+  "main": "app.js",
+  "engines": {
+    "node": "16.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
@@ -29,7 +33,6 @@
     "react-watson": "npm start --prefix react-watson",
     "dev": "concurrently \"npm run app\" \"npm run react-watson\""
   },
-  "main": "app.js",
   "dependencies": {
     "dotenv": "^6.2.0",
     "express": "^4.17.1",
